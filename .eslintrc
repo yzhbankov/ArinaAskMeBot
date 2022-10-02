@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:mocha/recommended"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "no-multiple-empty-lines": ["error", { "max": 2 }],
+    "import/no-extraneous-dependencies": [
+      "off",
+      {
+        "devDependencies": [
+          "**/?(*.)+(spec|test).[mtj]s?(x)"
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@in-contact/repository", "./shared/repository"],
+          ["@in-contact/logger", "./shared/logger"],
+          ["@in-contact/notificator", "./shared/notificator"],
+          ["@in-contact/db-migration", "./shared/db-migration"],
+          ["@in-contact/env", "./shared/env"]
+        ],
+        "extensions": [
+          ".ts",
+          ".js",
+          ".jsx",
+          ".json",
+          ".mjs"
+        ]
+      }
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  }
+}

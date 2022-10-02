@@ -1,0 +1,12 @@
+{
+    "logLevel": ["required", "string"],
+    "serviceName": ["required", "string"],
+    "auth": [
+        "required",
+        {
+            "nested_object": {
+                "botToken": ["required", "string"]
+            }
+        }
+    ]
+}

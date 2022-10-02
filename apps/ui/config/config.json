@@ -1,0 +1,7 @@
+{
+    "logLevel": "{{AKS_ME_BOT_LOG_LEVEL}}",
+    "serviceName": "{{AKS_ME_BOT_SERVICE_NAME}}",
+    "auth": {
+        "botToken": "{{AKS_ME_BOT_TOKEN}}"
+    }
+}

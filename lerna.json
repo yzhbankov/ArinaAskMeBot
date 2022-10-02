@@ -1,0 +1,12 @@
+{
+  "npmClient": "yarn",
+  "packages": [
+    "shared/logger",
+    "shared/repository",
+    "shared/notificator",
+    "shared/db-migration",
+    "shared/env",
+    "apps/ui"
+  ],
+  "version": "1.0.0-alpha.0"
+}

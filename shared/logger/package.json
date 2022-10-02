@@ -1,0 +1,16 @@
+{
+  "name": "@in-contact/logger",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "devDependencies": {},
+  "scripts": {
+    "lint": "eslint --ext .mjs,.cjs .",
+    "lint:fix": "eslint --fix --ext .mjs,.cjs .",
+    "clean": "yarn run clean:node-modules",
+    "clean:node-modules": "rimraf node_modules"
+  },
+  "dependencies": {
+    "winston": "^3.3.3"
+  }
+}
