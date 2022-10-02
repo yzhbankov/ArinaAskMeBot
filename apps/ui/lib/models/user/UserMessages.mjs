@@ -3,6 +3,9 @@ export class UserMessages {
         return `
 Привет, ${name} я могу ответить на твой вопрос, просто задай мне его.`;
     }
+    static liamAnwar() {
+        return `Что?`;
+    }
     static randomAnswer() {
         const answers = [
             '<b>Бесспорно</b>',

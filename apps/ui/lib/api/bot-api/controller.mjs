@@ -35,6 +35,10 @@ export default async function (request, client) {
             await router(Controllers.main.question);
             break;
         }
+        case BOT_COMMAND.LIAM: {
+            await router(Controllers.main.liam);
+            break;
+        }
         default: {
             await router(Controllers.main.unknown);
             break;
